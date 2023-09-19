@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecommerce Website Using Tailwind</title>
+    <link rel="icon" href="organic-store-images/basil-leaf.png">
+
+    <!-- Link CSS  -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Link Tailwind CSS  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Smooth JS Link  -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+  </head>
+  <body>
+    <!-- Navbar Design  -->
+    <header class="text-gray-600 body-font">
+      <div
+        class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center"
+      >
+        <a
+          class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
+        >
+          </svg>
+          <span class="ml-3 text-xl"><img src="organic-store-images/organic-store-logo5.svg" class="cursor-pointer"></span>
+        </a>
+        <nav
+          class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center"
+        >
+          <a href="#home" class="mr-10 text-lime-600 font-semibold cursor-pointer hover:text-lime-500 text-lg">Home</a>
+          <a href="#products" class="mr-10 text-lime-600 font-semibold cursor-pointer hover:text-lime-500 text-lg">Products</a>
+          <a href="#reviews" class="mr-10 text-lime-600 font-semibold cursor-pointer hover:text-lime-500 text-lg">Reviews</a>
+          <a href="#pricing" class="mr-10 text-lime-600 font-semibold cursor-pointer hover:text-lime-500 text-lg">Pricing</a>
+          <a href="#contact" class="mr-10 text-lime-600 font-semibold cursor-pointer hover:text-lime-500 text-lg">Contact</a>
+        </nav>
+        <button
+          class="inline-flex items-center bg-lime-700 border-0 py-2 px-8 focus:outline-none hover:bg-lime-600 rounded text-base mt-4 md:mt-0 text-white text-12xl"
+        >
+         Enroll Now
+          <svg
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            class="w-4 h-4 ml-1"
+            viewBox="0 0 24 24"
+          >
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- Hero Section  -->
+    <section id="home" class="text-gray-600 body-font">
+        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+          <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+            <img class="object-cover object-center rounded ml-5 mt-8" alt="hero" src="organic-store-images/organic-products-hero.png">
+          </div>
+          <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+            <a href="#"> <img src="organic-store-images/logo-leaf-new.png" class="scale-125 mb-10"></a>
+            <h3 class="title-font sm:text-2xl text-6xl mb-8 font-medium text-gray-900">Best Quality Products</h3>
+            <h1 class="title-font sm:text-4xl text-14xl mb-12 ml-16 font-semibold text-gray-900 scale-150 leading-10 ">Join The Organic
+              <br class="hidden lg:inline-block"> Movement!
+            </h1>
+            <p class="mb-8 leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+            <div class="flex justify-center">
+              <button class="inline-flex items-center bg-lime-700 border-0 py-2 px-10 focus:outline-none hover:bg-lime-600 rounded text-base mt-4 md:mt-0 text-white text-12xl font-semibold">Shop Now</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Other Section  -->
+      <div class="flex flex-wrap p-6 text-center bg-black">
+        <div class="p-4 md:w-1/4 sm:w-1/2 w-full ">
+          <div class="border-2 border-gray-200 px-4 py-2 rounded-lg text-white hover:bg-white hover:text-black">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="text-indigo-500 w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
+              <path d="M8 17l4 4 4-4m-4-5v9"></path>
+              <path d="M20.88 18.09A5 5 0 0018 9h-1.26A8 8 0 103 16.29"></path>
+            </svg>
+            <h2 class="title-font font-medium text-3xl">2.7K</h2>
+            <p class="leading-relaxed font-semibold text-4xl">Downloads</p>
+          </div>
+        </div>
+        <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+          <div class="border-2 border-gray-200 px-4 py-2 rounded-lg  text-white hover:bg-white hover:text-black">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="text-indigo-500 w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
+              <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 00-3-3.87m-4-12a4 4 0 010 7.75"></path>
+            </svg>
+            <h2 class="title-font font-medium text-3xl">1.3K</h2>
+            <p class="leading-relaxed font-semibold text-4xl">Users</p>
+          </div>
+        </div>
+        <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+          <div class="border-2 border-gray-200 px-6 py-2 rounded-lg  text-white hover:bg-white hover:text-black">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="text-indigo-500 w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
+              <path d="M3 18v-6a9 9 0 0118 0v6"></path>
+              <path d="M21 19a2 2 0 01-2 2h-1a2 2 0 01-2-2v-3a2 2 0 012-2h3zM3 19a2 2 0 002 2h1a2 2 0 002-2v-3a2 2 0 00-2-2H3z"></path>
+            </svg>
+            <h2 class="title-font font-medium text-3xl">74</h2>
+            <p class="leading-relaxed font-semibold text-4xl">Files</p>
+          </div>
+        </div>
+        <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+          <div class="border-2 border-gray-200 px-4 py-2 rounded-lg  text-white hover:bg-white hover:text-black">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="text-indigo-500 w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+            <h2 class="title-font font-medium text-3xl">46</h2>
+            <p class="leading-relaxed font-semibold text-4xl">Places</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ecommerce Section  -->
+      <section id="products" class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto ">
+            <h1 class="title-font sm:text-5xl text-16xl mb-12 ml-16 font-bold text-gray-900 text-center mt-4">Trending Products
+            </h1>
+            <a href="#"><img src="organic-store-images/logo-leaf-new.png" class="scale-125 mb-20  margin"></a>
+          <div class="flex flex-wrap -m-4">
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+              <a href="product.html" class="block relative h-48 rounded overflow-hidden">
+                <img alt="ecommerce" class="object-cover object-center w-full h-full block cursor-pointer" src="organic-store-images/coffee-asorted.jpg">
+              </a>
+              <div class="mt-4">
+                <h3 class="text-gray-500 text-2xs tracking-widest title-font mb-1">Groceries</h3>
+                <h2 class="text-gray-900 title-font text-lg font-medium">Assorted Coffee</h2>
+                <p class="mt-1">$16.00</p>
+              </div>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full"> 
+              <a href="oil.html" class="block relative h-48 rounded overflow-hidden">
+             <img alt="ecommerce" class=" object-center w-full h-full block" src="organic-store-images/edible-oil.jpg">
+              </a>
+              <div class="mt-4">
+                <h3 class="text-gray-500 text-2xs tracking-widest title-font mb-1">Groceries</h3>
+                <h2 class="text-gray-900 title-font text-lg font-medium">Natural Extracted Edible Oil</h2>
+                <p class="mt-1">$21.15</p>
+              </div>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+              <a class="block relative h-48 rounded overflow-hidden">
+                <img alt="ecommerce" class="object-center w-full h-full block" src="organic-store-images/sanitizer.jpg">
+              </a>
+              <div class="mt-4">
+                <h3 class="text-gray-500 text-2xs tracking-widest title-font mb-1">Groceries</h3>
+                <h2 class="text-gray-900 title-font text-lg font-medium">Hand Sanitizer</h2>
+                <p class="mt-1">$12.00</p>
+              </div>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+              <a class="block relative h-48 rounded overflow-hidden">
+                <img alt="ecommerce" class=" object-center w-full h-full block" src="organic-store-images/orage-juice-kariz.jpg">
+              </a>
+              <div class="mt-4">
+                <h3 class="text-gray-500 text-2xs tracking-widest title-font mb-1">Groceries</h3>
+                <h2 class="text-gray-900 title-font text-lg font-medium">Fresh Orange Juice</h2>
+                <p class="mt-1">$18.40</p>
+              </div>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+              <a class="block relative h-48 rounded overflow-hidden">
+                <img alt="ecommerce" class="object-center w-full h-full block" src="organic-store-images/red-chillies.jpg">
+              </a>
+              <div class="mt-4">
+                <h3 class="text-gray-500 text-2xs tracking-widest title-font mb-1">Groceries</h3>
+                <h2 class="text-gray-900 title-font text-lg font-medium">Handpicked Red Chillies</h2>
+                <p class="mt-1">$16.00</p>
+              </div>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+              <a class="block relative h-48 rounded overflow-hidden">
+                <img alt="ecommerce" class=" object-center w-full h-full block" src="organic-store-images/orage-juice-kariz.jpg">
+              </a>
+              <div class="mt-4">
+                <h3 class="text-gray-500 text-2xs tracking-widest title-font mb-1">Groceries</h3>
+                <h2 class="text-gray-900 title-font text-lg font-medium">Fresh Orange Juice</h2>
+                <p class="mt-1">$21.15</p>
+              </div>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+              <a class="block relative h-48 rounded overflow-hidden">
+                <img alt="ecommerce" class="object-center w-full h-full block" src="organic-store-images/sanitizer.jpg">
+              </a>
+              <div class="mt-4">
+                <h3 class="text-gray-500 text-2xs tracking-widest title-font mb-1">Groceries</h3>
+                <h2 class="text-gray-900 title-font text-lg font-medium">Hand Sanitizer</h2>
+                <p class="mt-1">$12.00</p>
+              </div>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+              <a class="block relative h-48 rounded overflow-hidden">
+                <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="organic-store-images/coffee-asorted.jpg">
+              </a>
+              <div class="mt-4">
+                <h3 class="text-gray-500 text-2xs tracking-widest title-font mb-1">Groceries</h3>
+                <h2 class="text-gray-900 title-font text-lg font-medium">Assorted Coffee</h2>
+                <p class="mt-1">$18.40</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Reviews Section  -->
+      
+      <h1 id="reviews" class="title-font sm:text-5xl text-16xl mb-12 ml-16 font-bold text-gray-900 text-center mt-14">
+        Customers Reviews
+    </h1>
+    <a href="#"><img src="organic-store-images/logo-leaf-new.png"  class="scale-125 mb-20  margin"></a>
+    <section class="text-gray-600 body-font">
+        <div class="container px-5 py-13 mx-auto">
+          <div class="flex flex-wrap -m-4">
+            <div class="p-4 md:w-1/2 w-full">
+              <div class="h-full bg-lime-600 p-8 rounded text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-8 h-8 text-white mb-4" viewBox="0 0 975.036 975.036">
+                  <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
+                </svg>
+                <p class="leading-relaxed mb-6">Synth chartreuse iPhone lomo cray raw denim brunch everyday carry neutra before they sold out fixie 90's microdosing. Tacos pinterest fanny pack venmo, post-ironic heirloom try-hard pabst authentic iceland.</p>
+                <a class="inline-flex items-center">
+                  <img alt="testimonial" src="organic-store-images/client01-free-img.png" class="w-14 h-14 rounded-full flex-shrink-0 object-cover object-center">
+                  <span class="flex-grow flex flex-col pl-4">
+                    <span class="title-font font-medium text-gray-900 text-2xl">Holden Caulfield</span>
+                    <span class="text-white text-2xs">UI DEVELOPER</span>
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="p-4 md:w-1/2 w-full">
+              <div class="h-full bg-lime-600 p-8 rounded text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-8 h-8 text-white mb-4" viewBox="0 0 975.036 975.036">
+                  <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
+                </svg>
+                <p class="leading-relaxed mb-6">Synth chartreuse iPhone lomo cray raw denim brunch everyday carry neutra before they sold out fixie 90's microdosing. Tacos pinterest fanny pack venmo, post-ironic heirloom try-hard pabst authentic iceland.</p>
+                <a class="inline-flex items-center">
+                  <img alt="testimonial" src="organic-store-images/client02-free-img.png" class="w-14 h-14 rounded-full flex-shrink-0 object-cover object-center">
+                  <span class="flex-grow flex flex-col pl-4">
+                    <span class="title-font font-medium text-gray-900 text-2xl">Alper Kamu</span>
+                    <span class="text-white text-2xs">DESIGNER</span>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+       <!-- Our Team  -->
+       <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-col text-center w-full mb-20">
+            <h1 class="title-font sm:text-5xl text-16xl mb-12 ml-16 font-bold text-gray-900 text-center mt-14">Our Team</h1>
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-base max-w-lg">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them.</p>
+          </div>
+          <div class="flex flex-wrap -m-2 ">
+            <div class="p-2 lg:w-1/3 md:w-1/2 w-full ">
+              <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg hover:bg-lime-400  ">
+                <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="organic-store-images/6.jpg.webp">
+                <div class="flex-grow">
+                  <h2 class="text-gray-900 title-font font-medium hover:text-white">Holden Caulfield</h2>
+                  <p class="text-gray-500 hover:text-white">UI Designer</p>
+                </div>
+              </div>
+            </div>
+            <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+              <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg hover:bg-lime-400 bg-lime-300 ">
+                <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="organic-store-images/7.jpg.webp">
+                <div class="flex-grow">
+                  <h2 class="text-gray-900 title-font font-medium hover:text-white">Henry Letham</h2>
+                  <p class="text-gray-500 hover:text-white">CTO</p>
+                </div>
+              </div>
+            </div>
+            <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+              <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg hover:bg-lime-400 ">
+                <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="organic-store-images/8.jpg.webp">
+                <div class="flex-grow">
+                  <h2 class="text-gray-900 title-font font-medium hover:text-white">Oskar Blinde</h2>
+                  <p class="text-gray-500 hover:text-white">Founder</p>
+                </div>
+              </div>
+            </div>
+            <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+              <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg hover:bg-lime-400 ">
+                <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="organic-store-images/9.jpg.webp">
+                <div class="flex-grow">
+                  <h2 class="text-gray-900 title-font font-medium hover:text-white">John Doe</h2>
+                  <p class="text-gray-500 hover:text-white">DevOps</p>
+                </div>
+              </div>
+            </div>
+            <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+              <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg hover:bg-lime-400 bg-lime-300">
+                <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="organic-store-images/4.jpg.webp">
+                <div class="flex-grow">
+                  <h2 class="text-gray-900 title-font font-medium hover:text-white">Martin Eden</h2>
+                  <p class="text-gray-500 hover:text-white">Software Engineer</p>
+                </div>
+              </div>
+            </div>
+            <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+              <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg hover:bg-lime-400 ">
+                <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="organic-store-images/5.jpg.webp">
+                <div class="flex-grow">
+                  <h2 class="text-gray-900 title-font font-medium hover:text-white">Boris Kitua</h2>
+                  <p class="text-gray-500 hover:text-white">UX Researcher</p>
+                </div>
+              </div>
+            </div>
+            <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+              <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg hover:bg-lime-400 ">
+                <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="organic-store-images/15.jpg.webp">
+                <div class="flex-grow">
+                  <h2 class="text-gray-900 title-font font-medium hover:text-white">Atticus Finch</h2>
+                  <p class="text-gray-500 hover:text-white">QA Engineer</p>
+                </div>
+              </div>
+            </div>
+            <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+              <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg hover:bg-lime-400 bg-lime-300">
+                <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="organic-store-images/16.jpg.webp">
+                <div class="flex-grow">
+                  <h2 class="text-gray-900 title-font font-medium hover:text-white">Alper Kamu</h2>
+                  <p class="text-gray-500 hover:text-white">System</p>
+                </div>
+              </div>
+            </div>
+            <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+              <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg hover:bg-lime-400 ">
+                <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="organic-store-images/25.jpg.webp">
+                <div class="flex-grow">
+                  <h2 class="text-gray-900 title-font font-medium hover:text-white">Rodrigo Monchi</h2>
+                  <p class="text-gray-500 hover:text-white">Product Manager</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pricing Section  -->
+      <section id="pricing" class="text-gray-600 body-font overflow-hidden">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-col text-center w-full mb-20">
+            <h1 class="title-font sm:text-5xl text-16xl mb-5 ml-16 font-bold text-gray-900 text-center mt-14">Pricing</h1>
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-500 mb-10">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical.</p>
+            <div class="flex mx-auto border-2 border-lime-600 rounded overflow-hidden mt-6">
+              <button class="py-1 px-4 bg-lime-600 text-white focus:outline-none">Monthly</button>
+              <button class="py-1 px-4 focus:outline-none">Annually</button>
+            </div>
+          </div>
+          <div class="flex flex-wrap -m-4">
+            <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
+              <div class="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden">
+                <h2 class="text-sm tracking-widest title-font mb-1 font-medium">START</h2>
+                <h1 class="text-5xl text-gray-900 pb-4 mb-4 border-b border-gray-200 leading-none">Free</h1>
+                <p class="flex items-center text-gray-600 mb-2">
+                  <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>Vexillologist pitchfork
+                </p>
+                <p class="flex items-center text-gray-600 mb-2">
+                  <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>Tumeric plaid portland
+                </p>
+                <p class="flex items-center text-gray-600 mb-6">
+                  <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>Mixtape chillwave tumeric
+                </p>
+                <button class="flex items-center mt-auto text-white bg-gray-400 border-0 py-2 px-4 w-full focus:outline-none hover:bg-gray-500 rounded">Button
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                  </svg>
+                </button>
+                <p class="text-xs text-gray-500 mt-3">Literally you probably haven't heard of them jean shorts.</p>
+              </div>
+            </div>
+            <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
+              <div class="h-full p-6 rounded-lg border-2 border-lime-600 flex flex-col relative overflow-hidden">
+                <span class="bg-lime-600 text-white px-3 py-1 tracking-widest text-xs absolute right-0 top-0 rounded-bl">POPULAR</span>
+                <h2 class="text-sm tracking-widest title-font mb-1 font-medium">PRO</h2>
+                <h1 class="text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
+                  <span>$38</span>
+                  <span class="text-lg ml-1 font-normal text-gray-500">/mo</span>
+                </h1>
+                <p class="flex items-center text-gray-600 mb-2">
+                  <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-lime-700 text-white rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>Vexillologist pitchfork
+                </p>
+                <p class="flex items-center text-gray-600 mb-2">
+                  <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-lime-700 text-white rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>Tumeric plaid portland
+                </p>
+                <p class="flex items-center text-gray-600 mb-2">
+                  <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-lime-700 text-white rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>Hexagon neutra unicorn
+                </p>
+                <p class="flex items-center text-gray-600 mb-6">
+                  <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-lime-700 text-white rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>Mixtape chillwave tumeric
+                </p>
+                <button class="flex items-center mt-auto text-white bg-lime-600 border-0 py-2 px-4 w-full focus:outline-none hover:bg-lime-500 rounded">Button
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                  </svg>
+                </button>
+                <p class="text-xs text-gray-500 mt-3">Literally you probably haven't heard of them jean shorts.</p>
+              </div>
+            </div>
+            <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
+              <div class="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden">
+                <h2 class="text-sm tracking-widest title-font mb-1 font-medium">BUSINESS</h2>
+                <h1 class="text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
+                  <span>$56</span>
+                  <span class="text-lg ml-1 font-normal text-gray-500">/mo</span>
+                </h1>
+                <p class="flex items-center text-gray-600 mb-2">
+                  <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>Vexillologist pitchfork
+                </p>
+                <p class="flex items-center text-gray-600 mb-2">
+                  <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>Tumeric plaid portland
+                </p>
+                <p class="flex items-center text-gray-600 mb-2">
+                  <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>Hexagon neutra unicorn
+                </p>
+                <p class="flex items-center text-gray-600 mb-2">
+                  <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>Vexillologist pitchfork
+                </p>
+                <p class="flex items-center text-gray-600 mb-6">
+                  <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>Mixtape chillwave tumeric
+                </p>
+                <button class="flex items-center mt-auto text-white bg-gray-400 border-0 py-2 px-4 w-full focus:outline-none hover:bg-gray-500 rounded">Button
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                  </svg>
+                </button>
+                <p class="text-xs text-gray-500 mt-3">Literally you probably haven't heard of them jean shorts.</p>
+              </div>
+            </div>
+            <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
+              <div class="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden">
+                <h2 class="text-sm tracking-widest title-font mb-1 font-medium">SPECIAL</h2>
+                <h1 class="text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
+                  <span>$72</span>
+                  <span class="text-lg ml-1 font-normal text-gray-500">/mo</span>
+                </h1>
+                <p class="flex items-center text-gray-600 mb-2">
+                  <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>Vexillologist pitchfork
+                </p>
+                <p class="flex items-center text-gray-600 mb-2">
+                  <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>Tumeric plaid portland
+                </p>
+                <p class="flex items-center text-gray-600 mb-2">
+                  <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>Hexagon neutra unicorn
+                </p>
+                <p class="flex items-center text-gray-600 mb-2">
+                  <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>Vexillologist pitchfork
+                </p>
+                <p class="flex items-center text-gray-600 mb-6">
+                  <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>Mixtape chillwave tumeric
+                </p>
+                <button class="flex items-center mt-auto text-white bg-gray-400 border-0 py-2 px-4 w-full focus:outline-none hover:bg-gray-500 rounded">Button
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                  </svg>
+                </button>
+                <p class="text-xs text-gray-500 mt-3">Literally you probably haven't heard of them jean shorts.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer Section  -->
+      <footer id="contact" class="text-gray-600 body-font bg-black">
+        <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+          <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left md:mt-0 mt-10">
+            <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+              <span class="mb-2 text-xl"><img src="organic-store-images/organic-store-white-logo.png" alt="logo"></span>
+            </a>
+            <p class="mt-2 text-sm text-gray-200">Air plant banjo lyft occupy retro adaptogen indego</p>
+          </div>
+          <div class="flex-grow flex flex-wrap md:pr-20 -mb-10 md:text-left text-center order-first">
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-lime-600 tracking-widest text-lg mb-3">Links</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="hover:text-lime-600 text-white">Home</a>
+                </li>
+                <li>
+                  <a class="hover:text-lime-600 text-white">About</a>
+                </li>
+                <li>
+                  <a class="hover:text-lime-600 text-white">Services</a>
+                </li>
+                <li>
+                  <a class="hover:text-lime-600 text-white">Contact</a>
+                </li>
+              </nav>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-lime-600 tracking-widest text-lg mb-3">Section</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="hover:text-lime-600 text-white">Our Teams</a>
+                </li>
+                <li>
+                  <a class="hover:text-lime-600 text-white">Reviews</a>
+                </li>
+                <li>
+                  <a class="hover:text-lime-600 text-white">Products</a>
+                </li>
+                <li>
+                  <a class="hover:text-lime-600 text-white">Pricing</a>
+                </li>
+              </nav>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-lime-600 tracking-widest text-lg mb-3">Groceries</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="hover:text-lime-600 text-white">Natural Extracted Edible Oil</a>
+                </li>
+                <li>
+                  <a class="hover:text-lime-600 text-white">Hand Sanitizer</a>
+                </li>
+                <li>
+                  <a class="hover:text-lime-600 text-white">Fresh Orange Juice</a>
+                </li>
+                <li>
+                  <a class="hover:text-lime-600 text-white">Assorted Coffee</a>
+                </li>
+              </nav>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-12">
+              <h2 class="title-font font-medium tracking-widest text-lg mb-3 text-lime-600">Social Links</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="hover:text-lime-600 text-white">Instagram</a>
+                </li>
+                <li>
+                  <a class="hover:text-lime-600 text-white">Linkedin</a>
+                </li>
+                <li>
+                  <a class="hover:text-lime-600 text-white">Facebook</a>
+                </li>
+                <li>
+                  <a class="hover:text-lime-600 text-white">Twitter</a>
+                </li>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="bg-lime-500">
+          <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+            <p class="text-white text-lg text-center sm:text-left font-bold">© 2023 Organic Store
+              <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">@ms.webdeveloper</a>
+            </p>
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+              <a class="text-white font-bold pt-2 scale-125 pl-4">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-white font-bold pt-2 scale-125 pl-4">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-white font-bold pt-2 scale-125 pl-4">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-white font-bold  pt-2 scale-125 pl-4">
+                <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                  <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                </svg>
+              </a>
+            </span>
+          </div>
+        </div>
+      </footer>
+
+      <!-- JS Link  -->
+      <script src="script.js"></script>
+  </body>
+</html>
